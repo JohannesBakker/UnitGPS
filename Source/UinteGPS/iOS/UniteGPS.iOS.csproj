@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{D1816CFC-25C0-4461-B84E-72BBD3E61210}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>UniteGPS.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>UniteGPSiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>i386</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer: Mayukha P (86Z4DG5RJ2)</CodesignKey>
+    <CodesignProvision>91c21109-f9fb-4df8-a0ad-06d4327f111e</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>true</BuildIpa>
+    <CodesignProvision>91c21109-f9fb-4df8-a0ad-06d4327f111e</CodesignProvision>
+    <CodesignKey>iPhone Developer: Mayukha P (86Z4DG5RJ2)</CodesignKey>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <ConsolePause>false</ConsolePause>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleAdMobAds">
+      <HintPath>..\Components\googleadmob-6.12.2.1\lib\ios\GoogleAdMobAds.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="GoogleMaps">
+      <HintPath>..\Components\googlemapsios-1.9.2\lib\ios\GoogleMaps.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS.Classic">
+      <HintPath>..\packages\Xamarin.Forms.1.4.2.6355\lib\MonoTouch10\Xamarin.Forms.Platform.iOS.Classic.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.1.4.2.6355\lib\MonoTouch10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.1.4.2.6355\lib\MonoTouch10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.1.4.2.6355\lib\MonoTouch10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Maps.iOS.Classic">
+      <HintPath>..\packages\Xamarin.Forms.Maps.1.4.2.6355\lib\MonoTouch10\Xamarin.Forms.Maps.iOS.Classic.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Maps">
+      <HintPath>..\packages\Xamarin.Forms.Maps.1.4.2.6355\lib\MonoTouch10\Xamarin.Forms.Maps.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UniteGPS\UniteGPS.csproj">
+      <Project>{2C7A8CEB-A080-4431-884D-D0157280672B}</Project>
+      <Name>UniteGPS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+    <BundleResource Include="Images\LocationArrow.png" />
+    <BundleResource Include="Images\SI.png" />
+    <BundleResource Include="Images\SIimg.png" />
+    <BundleResource Include="Images\Splash 320 480.png" />
+    <BundleResource Include="Images\Splash 640 1136.png" />
+    <BundleResource Include="Images\Splash 640 960.png" />
+    <BundleResource Include="Images\UinteGps.png" />
+    <BundleResource Include="Images\splimg1.png" />
+    <BundleResource Include="Images\eta1.png" />
+    <BundleResource Include="Images\premiums.png" />
+    <BundleResource Include="Images\Routesimg.png" />
+    <BundleResource Include="Images\Stops.png" />
+    <BundleResource Include="Images\Transparent.jpg" />
+    <BundleResource Include="Images\CarWashMapIcon.png" />
+    <BundleResource Include="Images\CenterOn.png" />
+    <BundleResource Include="Images\Currentlocation.png" />
+    <BundleResource Include="Images\radiobuttonon.png" />
+    <BundleResource Include="Images\buslocation.png" />
+    <BundleResource Include="Images\Bus_Icon.png" />
+    <BundleResource Include="Images\Bus_Stop_Icon.png" />
+    <BundleResource Include="Images\End_Icon.png" />
+    <BundleResource Include="Images\Start_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+    <None Include="Service References\dev_ws.unitegps.com\BusService.wsdl" />
+    <None Include="Service References\dev_ws.unitegps.com\BusService1.wsdl" />
+    <None Include="Service References\dev_ws.unitegps.com\BusService.xsd" />
+    <None Include="Service References\dev_ws.unitegps.com\BusService1.xsd" />
+    <None Include="Service References\dev_ws.unitegps.com\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\prd_ws.unitegps.com\BusService.wsdl" />
+    <None Include="Service References\prd_ws.unitegps.com\BusService1.wsdl" />
+    <None Include="Service References\prd_ws.unitegps.com\BusService.xsd" />
+    <None Include="Service References\prd_ws.unitegps.com\BusService1.xsd" />
+    <None Include="Service References\prd_ws.unitegps.com\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="BusClient.cs" />
+    <Compile Include="Manager.cs" />
+    <Compile Include="Service References\dev_ws.unitegps.com\Reference.cs">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="AdMobInterstitialAd.cs" />
+    <Compile Include="MapValues.cs" />
+    <Compile Include="AnnotationHelper.cs" />
+    <Compile Include="CustomRenderers\CustomRenderer.cs" />
+    <Compile Include="CustomRenderers\MyEntryRenderer.cs" />
+    <Compile Include="CustomRenderers\MyListViewRenderer.cs" />
+    <Compile Include="CustomRenderers\MyMapRenderer.cs" />
+    <Compile Include="CustomRenderers\NetworkConnection.cs" />
+    <Compile Include="CustomRenderers\iOSUserPreferences.cs" />
+    <Compile Include="BusStartAnnotationHelper.cs" />
+    <Compile Include="BusEndAnnotationHelper.cs" />
+    <None Include="RELEASE-NOTES.txt" />
+    <Compile Include="DistanceHelper.cs" />
+    <Compile Include="Service References\prd_ws.unitegps.com\Reference.cs">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.1.4.2.6355\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.4.2.6355\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <ItemGroup>
+    <WCFMetadata Include="Service References" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\dev_ws.unitegps.com" />
+    <WCFMetadataStorage Include="Service References\prd_ws.unitegps.com" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="googleadmob">
+      <Version>6.12.2.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="googlemapsios">
+      <Version>1.9.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>

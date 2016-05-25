@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3b05eb00-b479-487b-84dd-909f43845817" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>false</GenerateTaskBasedAsynchronousMethod>
+    <GenerateEventBasedAsynchronousMethods>false</GenerateEventBasedAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://prd-ws.unitegps.com/UniteGPSBusService/BusService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BusService.wsdl" MetadataType="Wsdl" ID="8d4596ca-a816-4435-94d2-2fd109908c30" SourceId="1" SourceUrl="http://prd-ws.unitegps.com/UniteGPSBusService/BusService.svc" />
+    <MetadataFile FileName="BusService1.wsdl" MetadataType="Wsdl" ID="76938899-ae0f-437c-8fd8-ef374ea7df65" SourceId="1" SourceUrl="http://prd-ws.unitegps.com/UniteGPSBusService/BusService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="BusService.xsd" MetadataType="Schema" ID="898e0960-bc7a-4636-87a2-716084216e4a" SourceId="1" SourceUrl="http://prd-ws.unitegps.com/UniteGPSBusService/BusService.svc?xsd=xsd0" />
+    <MetadataFile FileName="BusService1.xsd" MetadataType="Schema" ID="1caee1ff-c0ef-4a58-9295-ef0f66d6fd32" SourceId="1" SourceUrl="http://prd-ws.unitegps.com/UniteGPSBusService/BusService.svc?xsd=xsd1" />
+  </Metadata>
+</ReferenceGroup>

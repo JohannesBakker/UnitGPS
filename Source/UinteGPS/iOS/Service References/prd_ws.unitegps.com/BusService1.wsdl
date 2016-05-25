@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s0="http://www.unitegps.com/bus/10/2013" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.unitegps.com/bus/10/2013" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" targetNamespace="http://www.unitegps.com/bus/10/2013" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema xmlns:tns="http://www.unitegps.com/bus/10/2013/Imports" targetNamespace="http://www.unitegps.com/bus/10/2013/Imports" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import schemaLocation="http://prd-ws.unitegps.com/UniteGPSBusService/BusService.svc?xsd=xsd0" namespace="http://www.unitegps.com/bus/10/2013" />
+      <xs:import schemaLocation="http://prd-ws.unitegps.com/UniteGPSBusService/BusService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xs:schema>
+  </types>
+  <message name="IBusService_LogOnParent_InputMessage">
+    <part name="parameters" element="tns:LogOnParent" />
+  </message>
+  <message name="IBusService_LogOnParent_OutputMessage">
+    <part name="parameters" element="tns:LogOnParentResponse" />
+  </message>
+  <message name="IBusService_LogOnDriver_InputMessage">
+    <part name="parameters" element="tns:LogOnDriver" />
+  </message>
+  <message name="IBusService_LogOnDriver_OutputMessage">
+    <part name="parameters" element="tns:LogOnDriverResponse" />
+  </message>
+  <message name="IBusService_GetRoutes_InputMessage">
+    <part name="parameters" element="tns:GetRoutes" />
+  </message>
+  <message name="IBusService_GetRoutes_OutputMessage">
+    <part name="parameters" element="tns:GetRoutesResponse" />
+  </message>
+  <message name="IBusService_UpdateRoute_InputMessage">
+    <part name="parameters" element="tns:UpdateRoute" />
+  </message>
+  <message name="IBusService_UpdateRoute_OutputMessage">
+    <part name="parameters" element="tns:UpdateRouteResponse" />
+  </message>
+  <message name="IBusService_SaveRoute_InputMessage">
+    <part name="parameters" element="tns:SaveRoute" />
+  </message>
+  <message name="IBusService_SaveRoute_OutputMessage">
+    <part name="parameters" element="tns:SaveRouteResponse" />
+  </message>
+  <message name="IBusService_RouteExists_InputMessage">
+    <part name="parameters" element="tns:RouteExists" />
+  </message>
+  <message name="IBusService_RouteExists_OutputMessage">
+    <part name="parameters" element="tns:RouteExistsResponse" />
+  </message>
+  <message name="IBusService_GetStopsForRoute_InputMessage">
+    <part name="parameters" element="tns:GetStopsForRoute" />
+  </message>
+  <message name="IBusService_GetStopsForRoute_OutputMessage">
+    <part name="parameters" element="tns:GetStopsForRouteResponse" />
+  </message>
+  <message name="IBusService_GetBusCoordinates_InputMessage">
+    <part name="parameters" element="tns:GetBusCoordinates" />
+  </message>
+  <message name="IBusService_GetBusCoordinates_OutputMessage">
+    <part name="parameters" element="tns:GetBusCoordinatesResponse" />
+  </message>
+  <portType name="IBusService">
+    <operation name="LogOnParent">
+      <input wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/LogOnParent" message="tns:IBusService_LogOnParent_InputMessage" />
+      <output wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/LogOnParentResponse" message="tns:IBusService_LogOnParent_OutputMessage" />
+    </operation>
+    <operation name="LogOnDriver">
+      <input wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/LogOnDriver" message="tns:IBusService_LogOnDriver_InputMessage" />
+      <output wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/LogOnDriverResponse" message="tns:IBusService_LogOnDriver_OutputMessage" />
+    </operation>
+    <operation name="GetRoutes">
+      <input wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/GetRoutes" message="tns:IBusService_GetRoutes_InputMessage" />
+      <output wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/GetRoutesResponse" message="tns:IBusService_GetRoutes_OutputMessage" />
+    </operation>
+    <operation name="UpdateRoute">
+      <input wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/UpdateRoute" message="tns:IBusService_UpdateRoute_InputMessage" />
+      <output wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/UpdateRouteResponse" message="tns:IBusService_UpdateRoute_OutputMessage" />
+    </operation>
+    <operation name="SaveRoute">
+      <input wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/SaveRoute" message="tns:IBusService_SaveRoute_InputMessage" />
+      <output wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/SaveRouteResponse" message="tns:IBusService_SaveRoute_OutputMessage" />
+    </operation>
+    <operation name="RouteExists">
+      <input wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/RouteExists" message="tns:IBusService_RouteExists_InputMessage" />
+      <output wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/RouteExistsResponse" message="tns:IBusService_RouteExists_OutputMessage" />
+    </operation>
+    <operation name="GetStopsForRoute">
+      <input wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/GetStopsForRoute" message="tns:IBusService_GetStopsForRoute_InputMessage" />
+      <output wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/GetStopsForRouteResponse" message="tns:IBusService_GetStopsForRoute_OutputMessage" />
+    </operation>
+    <operation name="GetBusCoordinates">
+      <input wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/GetBusCoordinates" message="tns:IBusService_GetBusCoordinates_InputMessage" />
+      <output wsaw:Action="http://www.unitegps.com/bus/10/2013/IBusService/GetBusCoordinatesResponse" message="tns:IBusService_GetBusCoordinates_OutputMessage" />
+    </operation>
+  </portType>
+</definitions>

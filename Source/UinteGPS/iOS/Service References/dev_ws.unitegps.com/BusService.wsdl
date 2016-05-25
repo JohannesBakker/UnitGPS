@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s0="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:i0="http://www.unitegps.com/bus/10/2013" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" name="BusService" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <import location="http://dev-ws.unitegps.com/dev-UniteGPSBusService/BusService.svc?wsdl=wsdl0" namespace="http://www.unitegps.com/bus/10/2013" />
+  <types />
+  <binding name="BusService_basicHttpBinding" type="i0:IBusService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="LogOnParent">
+      <soap:operation soapAction="http://www.unitegps.com/bus/10/2013/IBusService/LogOnParent" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="LogOnDriver">
+      <soap:operation soapAction="http://www.unitegps.com/bus/10/2013/IBusService/LogOnDriver" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetRoutes">
+      <soap:operation soapAction="http://www.unitegps.com/bus/10/2013/IBusService/GetRoutes" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="UpdateRoute">
+      <soap:operation soapAction="http://www.unitegps.com/bus/10/2013/IBusService/UpdateRoute" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SaveRoute">
+      <soap:operation soapAction="http://www.unitegps.com/bus/10/2013/IBusService/SaveRoute" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RouteExists">
+      <soap:operation soapAction="http://www.unitegps.com/bus/10/2013/IBusService/RouteExists" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetStopsForRoute">
+      <soap:operation soapAction="http://www.unitegps.com/bus/10/2013/IBusService/GetStopsForRoute" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetBusCoordinates">
+      <soap:operation soapAction="http://www.unitegps.com/bus/10/2013/IBusService/GetBusCoordinates" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="BusService">
+    <port name="BusService_basicHttpBinding" binding="tns:BusService_basicHttpBinding">
+      <soap:address location="http://dev-ws.unitegps.com/dev-UniteGPSBusService/BusService.svc/basic" />
+    </port>
+  </service>
+</definitions>

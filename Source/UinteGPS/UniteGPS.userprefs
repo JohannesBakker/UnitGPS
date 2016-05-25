@@ -1,0 +1,83 @@
+﻿<Properties StartupItem="Android\UniteGPS.Android.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.GalaxyS5" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS\BusClient.cs">
+    <Files>
+      <File FileName="Android\MainActivity.cs" Line="56" Column="7" />
+      <File FileName="Android\Service References\prd_ws.unitegps.com\Reference.cs" Line="14" Column="1" />
+      <File FileName="Android\Service References\prd_ws.unitegps.com\Reference.svcmap" Line="1" Column="1" />
+      <File FileName="e:\Workspace\Elance\src\HanYong\UniteGPS\aaa\UinteGPS\UinteGPS\Android\BusClient.cs" Line="8" Column="46" />
+      <File FileName="UniteGPS\LiveMapScreen.cs" Line="1" Column="1" />
+      <File FileName="UniteGPS\TermsScreen.cs" Line="1" Column="1" />
+      <File FileName="UniteGPS\MainMasterDetailPage.cs" Line="1" Column="1" />
+      <File FileName="UniteGPS\App.cs" Line="1" Column="1" />
+      <File FileName="UniteGPS\CustomRenderer\MyMap.cs" Line="1" Column="1" />
+      <File FileName="Android\CustomRenderers\MyMapRenderer.cs" Line="1" Column="1" />
+      <File FileName="Android\Manager.cs" Line="1" Column="1" />
+      <File FileName="UniteGPS\IBusClient.cs" Line="26" Column="2" />
+      <File FileName="iOS\Manager.cs" Line="1" Column="1" />
+      <File FileName="iOS\BusClient.cs" Line="29" Column="3" />
+      <File FileName="UniteGPS\MenuScreen.cs" Line="1" Column="1" />
+      <File FileName="UniteGPS\LoginScreen.cs" Line="370" Column="52" />
+      <File FileName="Android\Spcode.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="UniteGPS" expanded="True">
+            <Node name="UniteGPS" expanded="True" />
+            <Node name="UniteGPS.Android" expanded="True">
+              <Node name="WebReferences" expanded="True">
+                <Node name="WebReferenceItem" expanded="True">
+                  <Node name="Reference.svcmap" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Packages" expanded="True" />
+              <Node name="CustomRenderers" expanded="True" />
+            </Node>
+            <Node name="UniteGPS.iOS" expanded="True">
+              <Node name="Service References" expanded="True">
+                <Node name="prd_ws.unitegps.com" expanded="True">
+                  <Node name="Reference.svcmap" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="BusClient.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/Prashanth/Projects/UinteGPS/UniteGPS/LoginScreen.cs" line="353" column="9" />
+      <Breakpoint file="/Users/Prashanth/Projects/UinteGPS/Android/MainActivity.cs" line="55" column="5" />
+      <Breakpoint file="/Users/Prashanth/Projects/UinteGPS/Android/MainActivity.cs" line="68" column="1" />
+      <Breakpoint file="/Users/Prashanth/Projects/UinteGPS/Android/MainActivity.cs" line="57" column="6" />
+      <Breakpoint file="/Users/Prashanth/Projects/UinteGPS/Android/MainActivity.cs" line="62" column="7" />
+      <Breakpoint file="/Users/Prashanth/Projects/UinteGPS/UniteGPS/App.cs" line="39" column="1" />
+      <Breakpoint file="/Users/Prashanth/Projects/UinteGPS/UniteGPS/App.cs" line="35" column="1" />
+      <Breakpoint file="/Users/Prashanth/Projects/UinteGPS/iOS/CustomRenderers/MyMapRenderer.cs" line="223" column="3" />
+      <Breakpoint file="/Users/Prashanth/Projects/UinteGPS/UniteGPS/LiveMapScreen.cs" line="498" column="1" />
+      <Breakpoint file="/Users/Prashanth/Projects/UinteGPS/UniteGPS/App.cs" line="31" column="1" />
+      <Breakpoint file="/Users/Prashanth/Projects/UinteGPS/UniteGPS/LiveMapScreen.cs" line="162" column="1" />
+      <Breakpoint file="/Users/Prashanth/Projects/UinteGPS/UniteGPS/RoutesListView.cs" line="7" column="1" />
+      <Breakpoint file="/Users/Prashanth/Projects/UinteGPS/UniteGPS/RoutesListView.cs" line="9" column="1" />
+      <Breakpoint file="E:\Workspace\Elance\src\HanYong\UniteGPS\aaa\UinteGPS\UinteGPS\UniteGPS\LoginScreen.cs" line="399" column="78" />
+      <Breakpoint file="E:\Workspace\Elance\src\HanYong\UniteGPS\aaa\UinteGPS\UinteGPS\Android\Service References\dev_ws.unitegps.com\Reference.cs" line="109" column="25" />
+      <Breakpoint file="E:\Workspace\Elance\src\HanYong\UniteGPS\aaa\UinteGPS\UinteGPS\Android\Service References\dev_ws.unitegps.com\Reference.cs" line="147" column="24" />
+      <Breakpoint file="E:\Workspace\Elance\src\HanYong\UniteGPS\aaa\UinteGPS\UinteGPS\Android\Service References\dev_ws.unitegps.com\Reference.cs" line="199" column="32" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="iOS\CustomRenderers\MyMapRenderer.cs" line="167" offsetX="921" offsetY="2490" expression="topCenterCoordinate" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <DisabledProjects>
+    <String>Service/Service.csproj</String>
+    <String>UniteGPS_SAL/UniteGPS_SAL.csproj</String>
+    <String>UniteGPS_Services/UniteGPSProject_Services.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.UniteGPS.Android AndroidDeviceId-Debug="000958dc7db52f" AndroidDeviceId-Release="000958dc7db52f" AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>
